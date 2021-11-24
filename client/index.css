@@ -1,0 +1,62 @@
+*{ 
+  margin: 0;
+  padding:0;
+  box-sizing: 100vh;
+  background: url('https://thumbs.dreamstime.com/b/girl-drawing-cup-coffee-notebook-44272044.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+button{
+text-align: center;  
+border: 7px rgb(83, 76, 76);  
+width: 75px;  
+height: 25px;  
+padding-top: 100px; 
+background-color: rgb(83, 76, 76);  
+}
+  h1{ 
+  font-size: 60px;
+  color: rgb(216, 213, 231); 
+  font-family: 'Shadows Into Light', cursive;
+  margin-left: auto;
+  margin-right: auto;  
+  }
+
+  a { text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .button {
+    background-color: #6e746e; /* Gray */
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+  }
+
+  #container{
+    min-height: 100%;
+  }
+
+  #main{
+    overflow: auto;
+    padding-bottom: 100px;
+  }
+
+  #footer{
+    background-color: grey;
+    position: relative;
+    height: 100px;
+    margin-top:-100px;
+    clear:both;
+  }
+  
