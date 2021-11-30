@@ -4,22 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <br><li class="crumb"><a href="./index.html">Home</a></li><br>
+    <br><li class="crumb"><a href="./signin.html">Account</a></li> 
+    <li class="crumb"><a href="./checkout.html">Locations</a></li>
     <link href="index.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-  <h1>  Log in:
-<form ><input type="text" placeholder="First Name"><br>
-<input type="text" placeholder="Last Name"><br>
-  </form>
-</h1> 
-<h3><br>
-<form >
+<h1>Sign up:</h1> <br>
+
+<div id="signIn">
+<div id = "informationForm">
+<div>
+<h3>
+<form>
+Firstname:<br>
+<input type="text" placeholder="First Name">
+Lastname:<br>
+<input type="text" placeholder="Last Name">
+Username:<br>
+<input type="text" placeholder="Username"><br>
 Email:<br>
-  <input type="text" placeholder="email"></form>
+  <input type="text" placeholder="email"><br>
 Password:<br>
-  <input type="text" placeholder="">
+  <input type="text" placeholder="Password"><br>
+Date of Birth:<br>
+  <input type="text" placeholder="Birthday">
+Phone Number:<br>
+<input type="text" placeholder="Phone Number">
+</div>
+<input type="radio" id="Male" name="Male" value="Male">
+<label for="Male">Male</label>
+<input type="radio" id="Female" name="Female" value="Female">
+<label for="Female">Female</label>
+<input type="radio" id="Pronouns" name="Pronouns" value="Pronouns">
+<label for="Pronouns">Pronouns</label>
+<button type="submit1">Submit</button><br>
+Forgot username/password:<br>
+<input type="text" placeholder="Type in email address">
+<button type="submit2">Submit</button><br>
 </form>
-  </h3> 
+</div>
+</div>
+</div>
+</h3> 
+
+
 </body>
+<!-- <script src = "../server/controller.js"></script>   -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</html>
 </html>
