@@ -292,3 +292,66 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+nav{
+ background-color: red;
+ display:grid;
+ place-items: center;
+}
+nav ul{
+  list-style-type: none;
+}
+
+nav ul a{
+  display: inline-block;
+  padding: 20px;
+  text-decoration: white;
+  transition: 0.2s ease-in;
+}
+
+nav ul a:hover{
+  background-color: burlywood;
+  color:white;
+}
+
+.items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 20px;
+  grid-auto-columns: 20px;
+}
+
+.item img{ 
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.item button{
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+  color: red;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  place-items: center;
+}
+
+.item2, img{ 
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.item2, button{
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+  color: red;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  place-items: center;
+}

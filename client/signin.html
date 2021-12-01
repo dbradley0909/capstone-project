@@ -4,54 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <br><li class="crumb"><a href="./index.html">Home</a></li><br>
-    <br><li class="crumb"><a href="./signin.html">Account</a></li> 
-    <li class="crumb"><a href="./checkout.html">Locations</a></li>
+    <header><h1>Niarobi's</h1>
+    <nav>
+    <ul>
+    <li class="crumb"><a href="./index.html">Home</a></li>
+    <li class="crumb"><a href="./signin.html">Account</a></li> 
+    <li class="crumb"><a href="./checkout.html">Locations</a></li>  
+   <ul>  
+   </nav></header>
+    
     <link href="index.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-<h1>Sign up:</h1> <br>
-
+  <section>
 <div id="signIn">
 <div id = "informationForm">
-<div>
-<h3>
-<form>
-Firstname:<br>
-<input type="text" placeholder="First Name">
-Lastname:<br>
-<input type="text" placeholder="Last Name">
-Username:<br>
-<input type="text" placeholder="Username"><br>
-Email:<br>
-  <input type="text" placeholder="email"><br>
-Password:<br>
-  <input type="text" placeholder="Password"><br>
-Date of Birth:<br>
-  <input type="text" placeholder="Birthday">
-Phone Number:<br>
-<input type="text" placeholder="Phone Number">
-</div>
-<input type="radio" id="Male" name="Male" value="Male">
-<label for="Male">Male</label>
-<input type="radio" id="Female" name="Female" value="Female">
-<label for="Female">Female</label>
-<input type="radio" id="Pronouns" name="Pronouns" value="Pronouns">
-<label for="Pronouns">Pronouns</label>
-<button type="submit1">Submit</button><br>
-Forgot username/password:<br>
-<input type="text" placeholder="Type in email address">
-<button type="submit2">Submit</button><br>
-</form>
-</div>
-</div>
-</div>
-</h3> 
+    <div class="container">
+    <h4>Create Account</h4>
+    <hr>
+      <label for="psw"><b>Email</b></label>
+      <input type="Email" placeholder="Email" name="email" id="email">
+      <label for="psw"><b>First and Last name</b></label>
+      <input type="First and Last name" placeholder="First and Last name" name="psw" id="First and Last name">
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw">
+  
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat">
+  
+      <label for="psw-repeat"><b>Please select Gender</b></label>
+      <input type="radio" name="Male" value="Male">Male
+      <input type="radio" name="Female" value="Female">Female/Them/They
+      <hr>
+    
+      <p>By creating an account you agree to our Terms & Privacy</p><br>
+      <button class="registerbtn">Register</button>
+    
+    </div>
+  
+    <div class="container signin">
+      <p>Forgot Password? <a href="#"><button type="submit" class="submit">Click here!</button></a>.</p>
 
 
-</body>
-<!-- <script src = "../server/controller.js"></script>   -->
+    </div>
+  </div>
+</div>
+  </section>
+<footer>
+    <p>Copyright &copy; Capstone Project</p>
+</footer>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
+    <script src="./index.js"></script> 
+    
+</body>
 </html>
 </html>
