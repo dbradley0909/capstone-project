@@ -2,8 +2,7 @@
 
 const registerButton = document.querySelector(".registerbtn")
 registerButton.addEventListener("click", () => {
-console.log('hit')
-  axios.get("http://localhost:4567/api/test")
+  axios.get("http://localhost:4567/test")
     .then(response => {
       alert(response.data);
     })
@@ -12,22 +11,39 @@ console.log('hit')
     });
 })
 
-const submit3 = document.querySelectorId("submit3")
-submit3.addEventListener("click", (e) => {
+const form = document.getElementById('checkoutForm')
+form.addEventListener('submit', (e) => {
   e.preventDefault();
-console.log('hit')
-  axios.get("http://localhost:4567/api/test/submit3")
+  axios.get("http://localhost:4567/submit3")
     .then(response => {
       alert(response.data);
     })
     .catch(error => {
       console.log(error)
     });
-})
-// document.getElementsByClassName("btn").onclick = function () {
-//   axios.get("http://localhost:4000/api/btn/")
-//     .then(function (response) {
-//       const data = response.data;
-//       alert(data);
-//     });
-// }
+ })
+
+ const password = document.getElementById('forgotpassword')
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  axios.get("http://localhost:4567/forgotpassword")
+    .post(request => {
+      alert(response.data);
+    })
+    .catch(error => {
+      console.log(error)
+    });
+ })
+
+//  form.addEventListener('log in', (e) => {
+//    e.preventDefault();
+//    axios.get("http://localhost:4567/login")
+//      .post(request => {
+//        let info= request.params.id;
+//        console.log(info);
+//      })
+//      .catch(error => {
+//        console.log(error)
+//      });
+//   })
+

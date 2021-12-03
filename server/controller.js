@@ -1,24 +1,26 @@
-//module.exports = {
-//   getregisterbtn: 
-//   ("/api/test", 
-//   (req, res) => {
-//     console.log("Hello")
-//     res.status(200).send('Thank you for signing up!An email will be sent to you confirming your account!')
-//   }),
+module.exports = {
+  getTest: (req, res) => {
+    console.log("Hello")
+    res.status(200).send('Thank you for signing up! An email will be sent to your account')
 
-//   getsubmit3: 
-//   ("/api/submit3",
-//   (req, res) => {
-//     const compliments = [
-//       "Thank you ",
-//       "Cool shirt!",
-//       "Your Javascript skills are stellar.",
-//     ];
+},
+  getSubmit3: (req,res) => {
+    const confirmations = [
+    "Thank you your confirmation number is 5453454",
+    "Thank you your confirmation number is 545345efff4",
+    "Thank you your confirmation number is 5453ygyu454",
+    "Thank you your confirmation number is 54534chchch54"
+]
+let idx = Math.floor(Math.random() * confirmations.length);
+let random = confirmations[idx];
 
-//     // choose random compliment
-//     let randomIndex = Math.floor(Math.random() * compliments.length);
-//     let randomCompliment = compliments[randomIndex];
+res.status(200).send(random);    
+  },  
 
-//     res.status(200).send(randomCompliment);
-//   }),
-// };
+  getForgotPassword:
+  (req,res) => {
+   prompt('enter your email here');
+res.status(200).send('prompt');    
+  },  
+  
+};
